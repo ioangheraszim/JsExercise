@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercise 1</title>
+
+    <!-- 
+    1. HTML and CSS:
+    a. Question: Explain the box model in CSS.
+
+    b. Exercise: Create a simple webpage layout with a header, sidebar, main content area, and a footer. Apply basic styling using CSS.
+
+    c. Question: What is the difference between margin and padding in CSS? Provide an example.
+
+-->
+    <style>
+      *,
+      ::before,
+      ::after {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-size: 1.25rem;
+      }
+
+      footer {
+        font-size: 1.5rem;
+        font-weight: 700;
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+        background-color: rgb(182, 180, 179);
+        padding: 0.5rem;
+        color: #fff;
+      }
+
+      .container {
+        width: min(100% - 2rem, 63rem);
+        margin: 0 auto;
+      }
+
+      nav,
+      .nav-links {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+
+      ul {
+        list-style-type: none;
+      }
+
+      ul li {
+        padding: 2rem;
+      }
+
+      .logo {
+        font-size: 2rem;
+      }
+
+      .logo span {
+        color: red;
+      }
+
+      h1 {
+        margin: 1.5rem 0;
+      }
+
+      .exercise {
+        background-color: beige;
+        border: 1px solid grey;
+        box-shadow: inset 5px 5px 5px rgb(134, 134, 133),
+          inset -5px -5px 5px rgb(134, 134, 133);
+        font-weight: 700;
+        font-size: 2rem;
+      }
+
+      .answer {
+        text-align: justify;
+        font-size: 1.25rem;
+        padding: 1rem 1rem;
+        border: 1px solid grey;
+        margin: 1rem 0;
+      }
+
+      .qna {
+        margin: 1rem 0;
+        font-size: 1.5rem;
+      }
+
+      .sidebar {
+        width: 20%;
+        background-color: #f0f0f0;
+        padding: 1rem;
+        box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+        position: fixed;
+      }
+    </style>
+  </head>
+  <body>
+    <header class="container">
+      <nav>
+        <p class="logo">First<span>Exercise</span></p>
+        <ul class="nav-links">
+          <li>Nav Link 1</li>
+          <li>Nav Link 2</li>
+          <li>Nav Link 3</li>
+        </ul>
+      </nav>
+    </header>
+    <aside class="sidebar">
+        <h2>Sidebar</h2>
+        <p>Content for the sidebar goes here.</p>
+    </aside>
+    <main class="container">
+        <h1>Main content</h1>
+        <p class="exercise">
+            Exercise: Create a simple webpage layout with a header, sidebar, main
+            content area, and a footer. Apply basic styling using CSS.
+        </p>
+        <section class="qna">
+            <div>
+                <p class="question">1. Question: Explain the box model in CSS.</p>
+                <p class="answer">
+                    The box model in css is used when talking about the design and
+                    layout. It is basically a box that wrapped around every
+                    <b>HTML</b> element. It consists of outline,margin,padding,borders
+                    and the element its self or the content.
+                </p>
+            </div>
+            
+            <div>
+                <p class="question">
+                    2. What is the difference between margin and padding in CSS? Provide
+                    an example.
+                </p>
+                <p class="answer">
+                    Difference between <strong>Margin</strong> and
+                    <strong>Padding</strong> is that margin affects the outside of the
+                    box the element content consists of and padding is the space on the
+                    inside of the box in which the content resides.
+                </p>
+            </div>
+        </section>
+    </main>
+    
+
+    <footer class="container">
+      <h2>FOOTER</h2>
+      <ul class="footer-links">
+        <p>Links</p>
+        <li>link</li>
+        <li>link</li>
+      </ul>
+    </footer>
+  </body>
+</html>
