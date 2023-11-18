@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/style.css" />
+    <title>Exercise 2</title>
+  </head>
+  <body>
+    <header class="container">
+      <nav>
+        <p class="logo">First<span>Exercise</span></p>
+        <ul class="nav-links">
+          <li>Nav Link 1</li>
+          <li>Nav Link 2</li>
+          <li>Nav Link 3</li>
+        </ul>
+      </nav>
+    </header>
+    <main class="container">
+      <h1>Exercise 2</h1>
+
+      <section class="qna">
+        <div>
+          <p class="question">
+            1. Explain the concept of closures in JavaScript.
+          </p>
+          <p class="answer">
+            A closure in JavaScript occurs when a function is defined inside
+            another function, and the inner function retains access to the outer
+            function's variables and the global scope. This feature allows the
+            enclosed function to "close over" the surrounding environment,
+            maintaining access to the variables even after the outer function
+            has completed execution. Closures are particularly useful for
+            creating data privacy in JavaScript. By encapsulating variables
+            within a closure, you can restrict their access, preventing
+            unintended modifications from outside the closure. This capability
+            is widely employed in various programming patterns, including the
+            creation of private variables and the implementation of the module
+            pattern. In summary, closures in JavaScript provide a mechanism for
+            functions to retain access to the scope in which they were created,
+            offering benefits such as data encapsulation, privacy, and the
+            ability to create modular and maintainable code.
+          </p>
+        </div>
+
+        <div>
+          <p class="question">
+            2. What is the difference between let, const, and var in JavaScript?
+          </p>
+          <p class="answer">
+            Difference between <strong>let</strong> and
+            <strong>const</strong> and <strong>var</strong> is in their scope
+            rules and how it is possible for them to be reassigned. Let and var
+            lets you create variables that can be reassigned. The difference
+            however is in their scope, <strong>let</strong> is block scoped and
+            <strong>var</strong> is function scoped. <strong>Const</strong> is
+            used when we want a variables value to be constant. However arrays
+            and objects value can still be changed.
+          </p>
+        </div>
+        <div>
+          <p class="question">
+            3. Write a function that takes an array of numbers as an argument
+            and returns a new array with only the even numbers.
+          </p>
+          <img class="code" src="./code-image.png" alt="code image">
+          <p class="answer">Result: 2,4,6</p>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
