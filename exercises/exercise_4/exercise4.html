@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/style.css" />
+    <title>Exercise 4</title>
+  </head>
+  <body>
+    <header class="container">
+      <nav>
+        <p class="logo">Knowledge<span>Exercise</span></p>
+        <ul class="nav-links">
+          <li>Nav Link 1</li>
+          <li>Nav Link 2</li>
+          <li>Nav Link 3</li>
+        </ul>
+      </nav>
+    </header>
+    <main class="container">
+      <h1>Exercise 4</h1>
+
+      <section class="qna">
+        <div>
+          <p class="question">
+            1. What is responsive web design, and how can it be achieved?
+          </p>
+          <p class="answer">
+            Responsive web design is an approach to designing and building
+            websites to provide an optimal viewing experience across a wide
+            range of devices and screen sizes. This includes desktop monitors,
+            laptops, tablets, and mobile phones. The goal is to ensure that the
+            website's layout and content adapt smoothly to various screen
+            dimensions and orientations.
+          </p>
+        </div>
+
+        <div>
+          <p class="question">
+            2. Implement a media query in CSS to make a webpage responsive on smaller screens.
+          </p>
+          <div class="media-change">
+            <p class="answer">
+                This boxes background color will change depending on the screen size.
+            </p>
+          </div>
+        </div>
+        <div>
+          <p class="question">
+            4. Create a function that toggles the visibility of an HTML element when a button is clicked. Use vanilla JavaScript (no libraries or frameworks).
+          </p>
+          <div class="media-change">
+            <p id="paragraph" class="visible">
+               This will be visible and not visible
+            </p>
+            <button class="the-btn" id="the-btn">Toggle visibility</button>
+          </div>
+        </div>
+        <div>
+          <p class="question">
+            4. Given an HTML structure with a list of items, write a function to filter and display only the items that contain a specific keyword entered in an input field.
+          </p>
+          <div>
+            <div class="answer">
+              <input type="text" id="filterInput" placeholder="Enter keyword">
+              <ul id="itemList">
+                <li>Apple</li>
+                <li>Orange</li>
+                <li>Banana</li>
+                <li>Grapes</li>
+                <li>Strawberry</li>
+                <li>Mango</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div>
+          <p class="question">
+            4. Given an HTML structure with a list of items, write a function to filter and display only the items that contain a specific keyword entered in an input field.
+          </p>
+          <div id="container-carousel" class="carousel-container">
+            <div class="carousel-item">
+                <img src="https://t4.ftcdn.net/jpg/05/62/02/41/360_F_562024161_tGM4lFlnO0OczLYHFFuNNdMUTG9ekHxb.jpg">
+            </div>
+            <div class="carousel-item">
+                <img src="https://images2.thanhnien.vn/uploaded/dotuan/2021_04_02/2_YJRT.jpg">
+            </div>
+            <div class="carousel-item">
+                <img src="https://gachax.com/anime/wp-content/uploads/sites/29/2023/06/cute-anime-girl-pfp-profile-pictures-chibi.png">
+            </div>
+          </div>
+          <button class="the-btn" id="prevBtn">Previous</button>
+          <button  class="the-btn" id="nextBtn">Next</button>
+        </div>
+      </section>
+    </main>
+    <script src="./exercise4.js"></script>
+  </body>
+</html>
