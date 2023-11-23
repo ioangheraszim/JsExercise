@@ -60,3 +60,12 @@ carouselTime();
 // Event listeners for next and previous buttons
 document.getElementById("nextBtn").addEventListener("click", nextSlide);
 document.getElementById("prevBtn").addEventListener("click", previousSlide);
+
+
+const flattenArray = (arr) => {
+  return arr.flat(Infinity)
+} 
+
+const theArray = [1, [2, 3, [4, 5]], 6]
+
+console.log(flattenArray(theArray))

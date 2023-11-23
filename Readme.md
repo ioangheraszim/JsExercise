@@ -158,3 +158,4 @@ carouselTime();
 document.getElementById("nextBtn").addEventListener("click", nextSlide);
 document.getElementById("prevBtn").addEventListener("click", previousSlide);
 ```
+### 6. 
